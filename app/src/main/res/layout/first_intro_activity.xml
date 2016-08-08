@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMainBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center|left"
+        android:layout_marginTop="40sp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSubIntro1"
+            android:text="ShopperStock"
+            android:layout_marginLeft="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtSubIntro"
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:textStyle="italic"
+            android:text="lorem ipsum lorem ipsum lorem ipsum"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="40dp"
+            android:width="250sp"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/txtSubIntro3"
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:textStyle="italic"
+            android:text="lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="40dp"
+            android:width="250sp"
+            android:textSize="18sp"  />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

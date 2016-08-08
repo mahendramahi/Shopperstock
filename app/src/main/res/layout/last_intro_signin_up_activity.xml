@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    >
+<!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >-->
+<!--
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:padding="5dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/introSignin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SIGN IN"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>-->
+
+       <!-- <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="match_parent">-->
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:id="@+id/introSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight=".5"
+                android:text="let's Start"
+                android:textSize="20dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="40dp"
+                android:background="@drawable/letsstartbutton"
+                android:textStyle="bold" />
+     <!--   </LinearLayout>-->
+<!--
+
+    </LinearLayout>
+-->
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:paddingBottom="50dp"
+         android:layout_alignParentBottom="true">
+
+
+         <com.kafarati.main.utils.CusFntButton
+             android:id="@+id/signup"
+             android:text="@string/signup"
+             style="@style/signButton"
+             android:textColor="@color/black"
+             android:background="@drawable/round_signup_button" />
+
+         <com.kafarati.main.utils.CusFntTextView
+             style="@style/SplashTextview"
+             android:text="@string/already_account"
+             android:padding="10dp" />
+
+         <com.kafarati.main.utils.CusFntButton
+             android:id="@+id/login"
+             style="@style/signButton"
+             android:background="@drawable/round_login_button"
+             android:textColor="@color/white"
+             android:text="@string/signin"/>
+
+     </LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res"
+    xmlns:widget="http://schemas.android.com/apk/res"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/recom_title"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         android:background="@color/colorPrimary"
+        android:tag="sticky-nonconstant-hastransparancy"
+        android:padding="17dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended For You"
+            android:textColor="#b2b2b2"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.mahendra.shopperstock.custom.CustomGridView
+            android:id="@+id/recomnded_gl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#333333"
+            android:horizontalSpacing="2px"
+            android:listSelector="#00000000"
+            android:numColumns="2" />
+
+    </RelativeLayout>
+
+ <!--   <com.meetme.android.horizontallistview.HorizontalListView
+        android:id="@+id/recommnded_list"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/recom_title"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:scrollbars="horizontal"
+        app:dividerWidth="13dp" />
+
+    <RelativeLayout
+        android:id="@+id/indicator_recomnded"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="top"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+        &lt;!&ndash;    <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:padding="2dp"
+                android:src="@drawable/indicator_inactive" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:padding="2dp"
+                android:src="@drawable/indicator_active" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:padding="2dp"
+                android:src="@drawable/indicator_inactive" />&ndash;&gt;
+        </LinearLayout>
+
+        &lt;!&ndash; <com.viewpagerindicator.CirclePageIndicator &ndash;&gt;
+        &lt;!&ndash; android:id="@+id/circleindicator" &ndash;&gt;
+        &lt;!&ndash; android:layout_width="match_parent" &ndash;&gt;
+        &lt;!&ndash; android:layout_height="30dp" &ndash;&gt;
+        &lt;!&ndash; android:paddingBottom="7dip" &ndash;&gt;
+        &lt;!&ndash; app:centered="true" &ndash;&gt;
+        &lt;!&ndash; app:fillColor="#000000" &ndash;&gt;
+        &lt;!&ndash; app:strokeColor="#ffffff" /> &ndash;&gt;
+    </RelativeLayout>-->
+
+</LinearLayout>

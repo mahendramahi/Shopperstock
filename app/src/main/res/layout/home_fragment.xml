@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainrooo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        whatever:stuckShadowDrawable="@drawable/sticky_shadow_default" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/toop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vpPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/white">
+                </android.support.v4.view.ViewPager>
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="260dp"
+                    android:padding="5dip"
+                    app:radius="4dp"
+                    app:fillColor="@color/goldcolor"
+                    app:pageColor="#ff000000"
+                    app:strokeColor="#FFFFFF"
+                    app:strokeWidth="2dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/weekheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="sticky-nonconstant-hastransparancy"
+                android:background="@color/colorPrimary"
+                android:padding="17dp">
+
+                <TextView
+                    android:id="@+id/musicWeek_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Weekly Top 10"
+                    android:textColor="#b2b2b2"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/listinowRLLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <com.mahendra.shopperstock.custom.CustomGridView
+                    android:id="@+id/weeklytopgl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#333333"
+                    android:horizontalSpacing="2px"
+                    android:listSelector="#00000000"
+                    android:numColumns="2" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hidetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical" >
+<!--
+              <TextView
+                    android:id="@+id/texthidelist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Hide Lists"
+                    android:textColor="#ffd145"
+                    android:textSize="18dp" />-->
+
+                <com.mahendra.shopperstock.custom.CustomGridView
+                     android:id="@+id/expandlisthide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#333333"
+                    android:horizontalSpacing="2px"
+                    android:listSelector="#00000000"
+                    android:numColumns="1" >
+                </com.mahendra.shopperstock.custom.CustomGridView>
+            </LinearLayout>
+
+<!--             <include -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 layout="@layout/expndablelist" /> -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#404040" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/recommendedforyou" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#404040" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/purchesd" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#404040" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/kidscategry" />
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#1e1e1e" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#404040" />-->
+
+           <!-- <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/purchesdalbums" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/expandfulllist" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#404040" />
+
+        <!--    <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/playlist" />-->
+        </LinearLayout>
+    </com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
+
+</LinearLayout>
